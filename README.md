@@ -22,3 +22,9 @@ for($i = 1; $i <= 2; $i++){
 // Finalize the counter and generate log.txt file
 $log->end();
 ```
+
+This will create a file.txt in dir directory on your app with something like:
+
+```
+[30/09/2019 23:47:23] - http://localhost/LogRequest/ - ExecTime: 2 sec
+```
