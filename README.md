@@ -9,8 +9,8 @@ require "LogRequest.php";
 
 /** Instance LogRequest class
     @param $file dir/file.txt format
-    @param $dateFormat
-    @param $round integer number for round the seconds in decimals
+    @param $dateFormat - optional Default: "d/m/Y H:i:s"
+    @param $round - optional - integer number of digits after dot infloat falue seconds - Default: 2 = 1.35s
 **/
 $log = new LogRequest("log.txt", "d/m/Y H:i:s", 2);
 
@@ -26,5 +26,5 @@ $log->end();
 This will create a file.txt in dir directory on your app with something like:
 
 ```
-[30/09/2019 23:47:23] - http://localhost/LogRequest/ - ExecTime: 2 sec
+[30/09/2019 23:47:23] - http://localhost/LogRequest/teste.php?param=teste - ExecTime: 2 sec
 ```
